@@ -1,112 +1,120 @@
 /* Add CSS styling here */
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
+body {
     margin: 0;
     padding: 0;
-    /* border: 0; */
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+    display: inline-block;
 }
 
-body {
-    border: 1px solid #67daee;
-}
 
-.introduction {
-    width: 100%;
-    height: 300px;
-    padding: 5%;
-    color: aliceblue;
+/*** intro ***/
+
+.img-container {
+    width: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/img1.jpg);
 }
 
+.introduction {
+    width: 175vh;
+    height: 350px;
+    padding: 50px;
+    margin: auto;
+    color: aliceblue;
+    display: block;
+    display: flex;
+    align-content: stretch;
+}
+
+.nav-container {
+    margin: -50px 10px 280px;
+    padding: 20px;
+    width: 100%;
+    height: 50px;
+}
+
+.nav-bar li {
+    padding: 0 40px 20px 0;
+    font-size: 1.25rem;
+    text-decoration: none;
+    float: right;
+}
+
+h2 {
+    font-size: 3rem;
+    position: relative;
+    animation: heading;
+    animation-duration: 3.5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes heading {
+    0% {
+        top: -180px
+    }
+    100% {
+        top: 200px
+    }
+}
+
+.intro-title {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(80, 77, 77);
+    margin: 0 auto;
+    display: flex;
+}
+
+.title {
+    font-size: 4rem;
+    margin: 0 auto;
+    align-items: center;
+    align-items: baseline;
+}
+
+.intro-container {
+    width: 300px;
+    height: 200px;
+    margin: 0px auto;
+    text-align: center;
+    background-color: rgb(61, 63, 63);
+    display: flex;
+    justify-content: center;
+}
+
+.intro-text {
+    margin: 10%;
+    text-align: left;
+}
+
 .container {
     width: 100%;
-    height: 600px;
-    background-color: #fff;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/img2.jpg);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content {
+    width: 300px;
+    height: 350px;
+    margin: 40px 20px;
+    border-radius: 10px;
+    background-color: #559a63;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.foot {
+    margin: auto;
+    display: flex;
+}
+
+.foot footer .footer-nav {
+    text-align: center;
 }
 
 footer {
