@@ -95,7 +95,6 @@ body {
     margin: 0;
     padding: 0;
     text-decoration: none;
-    display: inline-block;
 }
 
 
@@ -112,23 +111,36 @@ body {
 .introduction {
     width: 175vh;
     height: 350px;
-    padding: 50px;
+    padding: 50px 50px 0 50px;
     margin: auto;
     color: aliceblue;
-    display: block;
     display: flex;
-    align-content: stretch;
 }
+
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/** nav-bar **/
 
 a {
     color: #f0600c;
 }
 
 .nav-container {
-    margin: -50px 10px 280px;
     padding: 20px;
     width: 90%;
     height: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar {
+    display: flex;
 }
 
 .nav-bar a {
@@ -160,10 +172,6 @@ h2 {
     color: #f0600c;
     width: 400px;
     height: 80px;
-    /* background-color: rgba(80, 77, 77, 0.274);*/
-    margin: 10% 50%;
-    /*display: flex;
-    justify-content: space-evenly;*/
 }
 
 .title {
@@ -173,9 +181,9 @@ h2 {
 
 .intro-container {
     width: 400px;
-    height: 200px;
-    margin: 250px auto 250px;
+    height: 250px;
     line-height: 2;
+    color: azure;
     text-align: center;
     border-radius: 10px;
     background-color: rgb(61, 63, 63);
@@ -207,6 +215,9 @@ h2 {
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+
+/** footer **/
 
 .foot {
     margin: auto;
