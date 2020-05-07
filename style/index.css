@@ -108,24 +108,21 @@ header {
 .img-container {
     width: auto;
     height: 1000px;
+    filter: blur(5%);
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../images/img1.jpg);
+    background-attachment: fixed;
+    backdrop-filter: blur(5%);
 }
 
 .introduction {
     width: 100%;
     height: 350px;
     margin: auto;
-    color: aliceblue;
+    color: #f0f8ff;
     display: flex;
-}
-
-.display {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    background-color: #3d3f3f6c;
 }
 
 
@@ -139,6 +136,7 @@ a {
     /* padding: 20px; */
     width: 100%;
     height: 50px;
+    padding: 2% 0;
     background-color: #ffffff;
     display: flex;
     justify-content: flex-end;
@@ -158,14 +156,14 @@ a {
 
 .nav-bar a:hover {
     color: #ffb88f;
-    border-top: 4px solid #ffb88f;
-    transition: .6s ease-in;
+    transition: .3s ease-in;
 }
 
 h2 {
     font-family: 'Advent Pro', sans-serif;
     font-size: 3.5rem;
     position: relative;
+    margin: 0 10%;
     animation: heading;
     animation-duration: 3.5s;
     animation-fill-mode: forwards;
@@ -186,6 +184,13 @@ h2 {
     height: 80px;
 }
 
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 .title {
     font-family: 'Advent Pro', sans-serif;
     font-size: 4rem;
@@ -198,7 +203,7 @@ h2 {
     color: azure;
     text-align: center;
     border-radius: 10px;
-    background-color: rgb(61, 63, 63);
+    background-color: #3d3f3f;
     display: flex;
     justify-content: center;
 }
