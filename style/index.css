@@ -88,6 +88,7 @@ video {
     font: inherit;
     text-decoration: none;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 body {
@@ -100,6 +101,11 @@ body {
 
 /*** intro ***/
 
+header {
+    width: 100%;
+    /* background-color: blue; */
+}
+
 .img-container {
     width: auto;
     height: 1000px;
@@ -109,12 +115,14 @@ body {
 }
 
 .introduction {
-    width: 175vh;
+    width: 100%;
     height: 350px;
     padding: 50px 50px 0 50px;
     margin: auto;
+    /* background-color: beige; */
     color: aliceblue;
     display: flex;
+    justify-content: flex-end;
 }
 
 .display {
@@ -135,11 +143,13 @@ a {
     padding: 20px;
     width: 90%;
     height: 50px;
+    background-color: rgba(255, 255, 255, 0.486);
     display: flex;
     justify-content: flex-end;
 }
 
 .nav-bar {
+    /* width: 100%; */
     display: flex;
 }
 
