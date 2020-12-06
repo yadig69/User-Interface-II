@@ -2,7 +2,7 @@
 $alice_blue: #f0f8ff;
 $color_christine_approx: #f0600c;
 $color_calypso_approx: #35728e;
-$color_hit_pink_approx: #ffb88f;
+$color_hit_pink_approx: #1df5f5;
 $color_dew_approx: #f0ffff;
 $white: #ffffff;
 $color_nile_blue_approx: #14455c;
@@ -424,6 +424,7 @@ video {
     font-family: $font_2, $font_1;
     font-size: 3.5rem;
     margin: 0 10%;
+    color: $color_hit_pink_approx;
     animation: name;
     animation-duration: 3.5s;
     animation-fill-mode: forwards;
